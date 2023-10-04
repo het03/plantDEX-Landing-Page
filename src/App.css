@@ -1,0 +1,46 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+.animation,
+.animation_layer {
+  height: 1000px;
+}
+
+.animation_layer {
+  display: block;
+  position: relative;
+  z-index: 1;
+}
+
+.animation_layer {
+  background-position: bottom center;
+  background-size: auto 1038px;
+  background-repeat: repeat-x;
+  width: 100%;
+  position: absolute;
+}
+
+.animation_layer.parallax {
+  position: fixed;
+}
+
+#front {
+  background-image: url(./assets/front.png);
+  width: 100%;
+  height: 100%;
+}
+
+#middle {
+  background-image: url(./assets/middle.png);
+  width: 100%;
+  height: 100%;
+}
+
+#back {
+  background-image: url(./assets/bg.png);
+  width: 100%;
+  height: 100%;
+}
