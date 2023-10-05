@@ -1,9 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap");
+
 #root {
   max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
   text-align: center;
 }
+
+.textblock {
+  background-color: #f9dfbb;
+  height: 100%;
+}
+
+.textblock-container {
+  width: 50%;
+  margin: 0 auto;
+  padding-top: 70px;
+}
+
+.textblock-title {
+  font-size: 35px;
+  font-weight: 600;
+  font-family: "Helvetica Neue";
+}
+
+.textblock-content {
+  font-size: 20px;
+}
+
+#title {
+  margin-top: 12%;
+}
+
+.name {
+  color: black;
+  font-size: 8rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 650;
+}
+
+.highlight {
+  color: green;
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+}
+
 .animation,
 .animation_layer {
   height: 1000px;
@@ -12,12 +51,12 @@
 .animation_layer {
   display: block;
   position: relative;
-  z-index: 1;
+  z-index: 10;
 }
 
 .animation_layer {
-  background-position: bottom center;
-  background-size: auto 1038px;
+  background-size: bottom center;
+  background-size: auto 100%;
   background-repeat: repeat-x;
   width: 100%;
   position: absolute;
@@ -27,20 +66,34 @@
   position: fixed;
 }
 
-#front {
-  background-image: url(./assets/front.png);
-  width: 100%;
-  height: 100%;
+#background {
+  background-image: url(./assets/Background.svg);
 }
 
-#middle {
-  background-image: url(./assets/middle.png);
-  width: 100%;
-  height: 100%;
+#clouds {
+  background-image: url(./assets/Clouds.svg);
 }
 
-#back {
-  background-image: url(./assets/bg.png);
-  width: 100%;
-  height: 100%;
+#sun {
+  background-image: url(./assets/Sun.svg);
+}
+
+#backfield {
+  background-image: url(./assets/Backfield.svg);
+}
+
+#mountain {
+  background-image: url(./assets/Mountains.svg);
+}
+
+#farmer {
+  background-image: url(./assets/Farmer.svg);
+}
+
+#corn {
+  background-image: url(./assets/Corn.svg);
+}
+
+#frontfield {
+  background-image: url(./assets/Frontfield.svg);
 }
