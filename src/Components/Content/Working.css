@@ -1,0 +1,31 @@
+.Wtextblock {
+  background-color: #f9dfbb;
+  height: 100%;
+  width: 100%;
+}
+.Wcontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Wtitle {
+  font-weight: 900;
+  margin-top: 10vh;
+  color: #1c4732;
+  font-size: 8rem;
+  text-align: center;
+}
+
+.Wcontent {
+  margin-top: 2rem;
+  text-align: justify;
+  font-size: 1.4rem;
+  max-width: 75vw;
+  color: #161718;
+  font-weight: 500;
+}
+
+li.steps {
+  margin-bottom: 1rem;
+}

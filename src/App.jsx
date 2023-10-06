@@ -4,6 +4,7 @@ import "./App.css";
 import About from "./Components/Content/About";
 import Working from "./Components/Content/Working";
 import FAQ from "./Components/Content/FAQ";
+import placeholder from "./assets/placeholder.svg";
 
 function App() {
   return (
@@ -23,9 +24,7 @@ function App() {
         </ParallaxLayer>
         <ParallaxLayer offset={0} speed={0.1}>
           <div className="animation_layer parallax" id="top">
-            <div className="title">
-              Plant<span className="highlight">DEX</span>
-            </div>
+            <img src={placeholder} />
           </div>
         </ParallaxLayer>
         <ParallaxLayer offset={0} speed={0.2}>

@@ -1,39 +1,16 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap");
-
 #root {
   max-width: 1280px;
   text-align: center;
 }
 
-.top {
-  margin: 0;
-  position: relative;
-  width: 100%;
-  height: 300px;
-  opacity: 1;
-  text-align: center;
-  font-family: "Poppins", sans-serif;
-}
-
-.title {
-  font-size: 8rem;
-  color: black;
-  font-weight: 700;
-  position: absolute;
-  left: 50%;
-  top: 40%;
-  transform: translate(-50%, -50%);
-}
-
-.highlight {
-  color: green;
-  font-family: "Poppins", sans-serif;
-  font-weight: 900;
+#top {
+  top: 20vh;
+  user-select: none;
 }
 
 .animation,
 .animation_layer {
-  height: 1000px;
+  height: 100vh;
 }
 
 .animation_layer {
@@ -55,40 +32,40 @@
 
 #background {
   background-image: url(./assets/Background.svg);
-  background-size: cover;
+  background-size: contain;
 }
 
 #clouds {
   background-image: url(./assets/Clouds.svg);
-  background-size: cover;
+  background-size: contain;
 }
 
 #sun {
   background-image: url(./assets/Sun.svg);
-  background-size: cover;
+  background-size: contain;
 }
 
 #backfield {
   background-image: url(./assets/Backfield.svg);
-  background-size: cover;
+  background-size: contain;
 }
 
 #mountain {
   background-image: url(./assets/Mountains.svg);
-  background-size: cover;
+  background-size: contain;
 }
 
 #farmer {
   background-image: url(./assets/Farmer.svg);
-  background-size: cover;
+  background-size: contain;
 }
 
 #corn {
   background-image: url(./assets/Corn.svg);
-  background-size: cover;
+  background-size: contain;
 }
 
 #frontfield {
   background-image: url(./assets/Frontfield.svg);
-  background-size: cover;
+  background-size: contain;
 }
