@@ -5,6 +5,8 @@
   text-align: center;
 }
 
+/*     ABOUT PAGE          */
+
 .container {
   display: flex;
   justify-content: center; /* Add this line */
@@ -65,6 +67,8 @@
   color: #000000;
   text-align: justify;
 }
+
+/*     PARALLAX       */
 
 .top {
   margin: 0;
@@ -145,3 +149,7 @@
 #frontfield {
   background-image: url(./assets/Frontfield.svg);
 }
+
+/*     WORKING      */
+
+/*     FAQ      */

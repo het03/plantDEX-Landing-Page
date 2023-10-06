@@ -1,12 +1,14 @@
 import { useState } from "react";
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 import "./App.css";
-import TextBlock from "./TextBlock";
+import About from "./About";
+import Working from "./Working";
+import FAQ from "./FAQ";
 
 function App() {
   return (
     <>
-      <Parallax pages={2} style={{ top: "0", left: "0" }} className="animation">
+      <Parallax pages={4} style={{ top: "0", left: "0" }} className="animation">
         <ParallaxLayer offset={0} speed={0}>
           <div className="animation_layer parallax" id="background"></div>
         </ParallaxLayer>
@@ -39,7 +41,13 @@ function App() {
           <div className="animation_layer parallax" id="corn"></div>
         </ParallaxLayer>
         <ParallaxLayer offset={1} speed={0}>
-          <TextBlock />
+          <About />
+        </ParallaxLayer>
+        <ParallaxLayer offset={2} speed={0}>
+          <Working />
+        </ParallaxLayer>
+        <ParallaxLayer offset={3} speed={0}>
+          <FAQ />
         </ParallaxLayer>
       </Parallax>
     </>
