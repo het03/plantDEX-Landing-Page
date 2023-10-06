@@ -32,40 +32,40 @@
 
 #background {
   background-image: url(./assets/Background.svg);
-  background-size: contain;
+  background-size: cover;
 }
 
 #clouds {
   background-image: url(./assets/Clouds.svg);
-  background-size: contain;
+  background-size: cover;
 }
 
 #sun {
   background-image: url(./assets/Sun.svg);
-  background-size: contain;
+  background-size: cover;
 }
 
 #backfield {
   background-image: url(./assets/Backfield.svg);
-  background-size: contain;
+  background-size: cover;
 }
 
 #mountain {
   background-image: url(./assets/Mountains.svg);
-  background-size: contain;
+  background-size: cover;
 }
 
 #farmer {
   background-image: url(./assets/Farmer.svg);
-  background-size: contain;
+  background-size: cover;
 }
 
 #corn {
   background-image: url(./assets/Corn.svg);
-  background-size: contain;
+  background-size: cover;
 }
 
 #frontfield {
   background-image: url(./assets/Frontfield.svg);
-  background-size: contain;
+  background-size: cover;
 }
