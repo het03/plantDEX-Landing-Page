@@ -1,9 +1,9 @@
 import { useState } from "react";
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 import "./App.css";
-import About from "./About";
-import Working from "./Working";
-import FAQ from "./FAQ";
+import About from "./Components/Content/About";
+import Working from "./Components/Content/Working";
+import FAQ from "./Components/Content/FAQ";
 
 function App() {
   return (
@@ -12,32 +12,32 @@ function App() {
         <ParallaxLayer offset={0} speed={0}>
           <div className="animation_layer parallax" id="background"></div>
         </ParallaxLayer>
-        <ParallaxLayer offset={0} speed={0.65}>
+        <ParallaxLayer offset={0} speed={0.15}>
           <div className="animation_layer parallax" id="mountain"></div>
         </ParallaxLayer>
-        <ParallaxLayer offset={0} speed={0.6}>
+        <ParallaxLayer offset={0} speed={0.1}>
           <div className="animation_layer parallax" id="clouds"></div>
         </ParallaxLayer>
-        <ParallaxLayer offset={0} speed={0.7}>
+        <ParallaxLayer offset={0} speed={0.2}>
           <div className="animation_layer parallax" id="sun"></div>
         </ParallaxLayer>
-        <ParallaxLayer offset={0} speed={0.6}>
+        <ParallaxLayer offset={0} speed={0.1}>
           <div className="animation_layer parallax" id="top">
             <div className="title">
               Plant<span className="highlight">DEX</span>
             </div>
           </div>
         </ParallaxLayer>
-        <ParallaxLayer offset={0} speed={0.7}>
+        <ParallaxLayer offset={0} speed={0.2}>
           <div className="animation_layer parallax" id="backfield"></div>
         </ParallaxLayer>
-        <ParallaxLayer offset={0} speed={0.6}>
+        <ParallaxLayer offset={0} speed={0.1}>
           <div className="animation_layer parallax" id="farmer"></div>
         </ParallaxLayer>
-        <ParallaxLayer offset={0} speed={0.6}>
+        <ParallaxLayer offset={0} speed={0.1}>
           <div className="animation_layer parallax" id="frontfield"></div>
         </ParallaxLayer>
-        <ParallaxLayer offset={0} speed={0.6}>
+        <ParallaxLayer offset={0} speed={0.1}>
           <div className="animation_layer parallax" id="corn"></div>
         </ParallaxLayer>
         <ParallaxLayer offset={1} speed={0}>

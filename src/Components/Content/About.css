@@ -1,0 +1,62 @@
+/*     ABOUT PAGE          */
+
+.container {
+  display: flex;
+  justify-content: center; /* Add this line */
+  align-items: center; /* Add this line */
+  height: 100vh;
+}
+
+.textblock {
+  background-color: #f9dfbb;
+  height: 100%;
+  width: 100%;
+  padding: 10px 0;
+}
+
+.textblock-container-a {
+  max-width: 800px;
+  margin: 0 5%;
+  text-align: left;
+}
+
+.textblock-container-b {
+  max-width: 950px;
+  margin: 0 5%;
+  margin-left: auto;
+  text-align: right;
+}
+
+.textblock-title-a {
+  font-size: 4rem;
+  font-weight: 900;
+  font-family: "Poppins", sans-serif;
+  color: #1c4732;
+}
+
+.textblock-title-b {
+  margin-top: 150px;
+  font-size: 4rem;
+  font-weight: 900;
+  font-family: "Poppins", sans-serif;
+  color: #1c4732;
+}
+
+.textblock-content-a {
+  margin-bottom: 150px;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.3rem;
+  line-height: 1.5;
+  color: #000000;
+  text-align: justify;
+}
+
+.textblock-content-b {
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.3rem;
+  line-height: 1.5;
+  color: #000000;
+  text-align: justify;
+}

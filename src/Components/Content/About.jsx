@@ -1,6 +1,6 @@
-import "./App.css";
+import "./About.css";
 
-function TextBlock() {
+function About() {
   return (
     <div className="textblock">
       <div className="textblock-container-a">
@@ -33,4 +33,4 @@ function TextBlock() {
   );
 }
 
-export default TextBlock;
+export default About;
