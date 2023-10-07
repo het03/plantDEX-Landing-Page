@@ -1,8 +1,9 @@
 /* Default styles */
 nav {
   top: 2%;
-  left: 2%;
-  right: 2%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
   z-index: 2;
   position: fixed;
   background-color: #937e02;
@@ -10,10 +11,10 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2vh 3vh;
-  width: 92%;
-  border-radius: 4vh;
   font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  border-radius: 4vh; /* Default border radius */
 }
 
 .brand {
@@ -37,22 +38,55 @@ nav {
 }
 
 .nav-link {
+  background-color: transparent;
+  border: none;
   color: white;
-  text-decoration: none;
-  padding: 1vh;
+  font-size: 1.2rem;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  transition: background-color 0.3s ease-in-out;
+  position: relative;
+}
+
+/* Add underline on hover */
+.nav-link::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 0.3rem;
+  border-radius: 0.3rem;
+  bottom: 0;
+  left: 0;
+  background-color: green;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-in-out;
+}
+
+.nav-link:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
 
 .get-app-btn {
   background-color: green;
-  padding: 1.5vh 2vh;
+  color: #fff;
   border: none;
-  color: white;
-  text-align: center;
-  text-decoration: none;
-  font-size: 1.2rem;
+  padding: 0.6rem 1.25rem; /* Fixed spacing */
+  font-size: 1rem;
+  font-weight: 500;
   cursor: pointer;
-  border-radius: 1.5vh;
-  font-weight: 600;
+  border-radius: 0.3rem;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.get-app-btn:hover {
+  background-color: #049a10;
+}
+
+.toggle-button {
+  display: none;
 }
 
 /* Media query for small screens */
@@ -61,6 +95,8 @@ nav {
     padding: 1vh 2vh;
     width: 96%;
     border-radius: 2vh;
+    box-sizing: border-box;
+    overflow-x: hidden;
   }
 
   .nav-list {
@@ -79,6 +115,80 @@ nav {
     padding: 1vh 1.5vh;
     border-radius: 1vh;
   }
+
+  .toggle-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px; /* Adjust width */
+    height: 20px; /* Adjust height */
+    cursor: pointer;
+    background: transparent;
+    border: none;
+  }
+
+  .line {
+    width: 1.8rem; /* Adjust width */
+    height: 0.25rem; /* Adjust height */
+    background-color: white; /* Adjust color */
+    border-radius: 2rem;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .toggle-button.open .line:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .toggle-button.open .line:nth-child(2) {
+    opacity: 0;
+  }
+
+  .toggle-button.open .line:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  ul.nav-list {
+    display: none;
+  }
+
+  .nav-list.overlay-open {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+  }
+
+  .nav-list.overlay-open li {
+    margin: 1rem 0;
+  }
+
+  .nav-list.overlay-open .nav-link,
+  .nav-list.overlay-open .get-app-btn {
+    color: white;
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    margin: 1rem 0;
+  }
+
+  .nav-list.overlay-open .nav-link:hover {
+    text-decoration: underline;
+  }
+
+  .nav-list.overlay-open .get-app-btn {
+    background-color: green;
+    transition: background-color 0.3s ease-in-out;
+  }
+  .nav-list.overlay-open .get-app-btn:hover {
+    background-color: #049a10;
+  }
 }
 
 /* Media query for medium screens */
@@ -86,7 +196,7 @@ nav {
   nav {
     padding: 1.5vh 2vh;
     width: 94%;
-    border-radius: 3vh;
+    border-radius: 4vh;
   }
 
   .nav-list {

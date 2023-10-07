@@ -1,15 +1,40 @@
-import { useState } from "react";
+import React, { useState, useEffect, useRef } from "react"; // Import useRef
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 import "./App.css";
 import About from "./Components/Content/About";
 import Working from "./Components/Content/Working";
 import FAQ from "./Components/Content/FAQ";
 import placeholder from "./assets/placeholder.svg";
+import CustomNavbar from "./Components/Navbar/Navbar";
 
 function App() {
+  const parallaxRef = useRef(null); // Use useRef to create a ref
+  const [currentPage, setCurrentPage] = useState(0);
+
+  const scrollPage = (pageNumber) => {
+    setCurrentPage(pageNumber);
+    parallaxRef.current.scrollTo(pageNumber);
+  };
+
+  const [isOverlayVisible, setIsOverlayVisible] = useState(false);
+
+  const toggleOverlay = () => {
+    setIsOverlayVisible(!isOverlayVisible);
+  };
+
   return (
     <>
-      <Parallax pages={4} style={{ top: "0", left: "0" }} className="animation">
+      <CustomNavbar
+        currentPage={currentPage}
+        scrollPage={scrollPage}
+        toggleOverlay={toggleOverlay}
+      />
+      <Parallax
+        pages={4}
+        style={{ top: "0", left: "0" }}
+        className="animation"
+        ref={parallaxRef} // Attach the ref to Parallax
+      >
         <ParallaxLayer offset={0} speed={0}>
           <div className="animation_layer parallax" id="background"></div>
         </ParallaxLayer>
