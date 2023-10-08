@@ -1,5 +1,6 @@
 import React from "react";
 import "./About.css";
+import Pic1 from "../../assets/Image.png";
 
 function About() {
   return (
@@ -8,10 +9,20 @@ function About() {
         <div className="textblock-container-a">
           <h1 className="textblock-title-a">ABOUT US</h1>
           <p className="textblock-content-a">
-            PlantDEX is a revolutionary mobile application designed to empower
-            farmers and agricultural enthusiasts. Our app leverages cutting-edge
-            technology to assist in the quick and accurate identification of
-            plant diseases, making crop management more efficient and effective.
+            <strong>PlantDEX</strong>, conceived during the Smart India
+            Hackathon (SIH) by a dedicated team of six innovative minds,
+            revolutionizes agriculture. With a vision to empower farmers by
+            swiftly identifying plant diseases and recommending precise
+            treatments, our goal is to enhance agricultural productivity
+            seamlessly. During the intense SIH event, we balanced academics and
+            hackathon demands, meticulously researching and coding with guidance
+            from mentors. PlantDEX emerged as a testament to our determination
+            and collaboration, symbolizing our vision to revolutionize
+            agriculture through technology. Today, PlantDEX is more than an SIH
+            project; it's a real-world solution, a product of our relentless
+            efforts. Join us in this journey to empower farmers and create a
+            sustainable future, where technology and agriculture coalesce to
+            benefit every farmer and our nation.
           </p>
         </div>
         <div className="textblock-container-b">

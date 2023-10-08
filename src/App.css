@@ -1,5 +1,5 @@
 #root {
-  max-width: 1280px;
+  max-width: 100%; /* Adjusted max-width for better responsiveness */
   text-align: center;
 }
 
@@ -16,7 +16,7 @@
 .animation_layer {
   display: block;
   position: relative;
-  z-index: 1;
+  z-index: 1000;
 }
 
 .animation_layer {
@@ -28,6 +28,11 @@
 
 .animation_layer.parallax {
   position: fixed;
+}
+
+#top img {
+  max-width: 100%;
+  height: auto;
 }
 
 #background {
@@ -68,4 +73,47 @@
 #frontfield {
   background-image: url(./assets/Frontfield.svg);
   background-size: cover;
+}
+
+@media (max-width: 768px) {
+  .animation_layer.parallax {
+    background-attachment: scroll;
+  }
+  #background {
+    background-image: url(./assets/SBackground.svg);
+    background-size: cover;
+  }
+
+  #clouds {
+    background-image: url(./assets/SClouds.svg);
+    background-size: cover;
+  }
+
+  #sun {
+    background-image: none;
+  }
+
+  #backfield {
+    background-image: url(./assets/SMountainFront.svg);
+    background-size: cover;
+  }
+
+  #mountain {
+    background-image: url(./assets/SMountainBack.svg);
+    background-size: cover;
+  }
+
+  #farmer {
+    background-image: none;
+  }
+
+  #corn {
+    background-image: url(./assets/Scrop.svg);
+    background-size: cover;
+  }
+
+  #frontfield {
+    background-image: url(./assets/SBackField.svg);
+    background-size: cover;
+  }
 }

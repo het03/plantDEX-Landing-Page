@@ -97,6 +97,7 @@ nav {
     border-radius: 2vh;
     box-sizing: border-box;
     overflow-x: hidden;
+    background-color: #a5e596;
   }
 
   .nav-list {
@@ -197,6 +198,7 @@ nav {
     padding: 1.5vh 2vh;
     width: 94%;
     border-radius: 4vh;
+    background-color: #a5e596;
   }
 
   .nav-list {

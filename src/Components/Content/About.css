@@ -1,24 +1,26 @@
-/* About.css */
-
 .textblock {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   background-color: #f9dfbb;
-  padding-top: 10rem;
+  height: 100vh;
 }
 
 .textblock-container-a,
 .textblock-container-b {
   max-width: 80%;
-  margin: 0 auto;
+}
+.textblock-container-a {
   text-align: left;
+}
+.textblock-container-b {
+  text-align: right;
 }
 
 .textblock-title-a,
 .textblock-title-b {
-  font-size: 6rem;
+  font-size: 5rem;
   font-weight: 900;
   color: #1c4732;
   margin: 0;
@@ -26,9 +28,40 @@
 
 .textblock-content-a,
 .textblock-content-b {
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   line-height: 1.5;
   font-weight: 500;
   color: #161718;
   text-align: justify;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .textblock {
+    background-color: #c9fede;
+  }
+  .textblock-title-a,
+  .textblock-title-b {
+    font-size: 2rem; /* Adjusted font size for medium-sized screens */
+  }
+
+  .textblock-content-a,
+  .textblock-content-b {
+    font-size: 0.9rem; /* Adjusted font size for medium-sized screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .textblock {
+    background-color: #c9fede;
+  }
+  .textblock-title-a,
+  .textblock-title-b {
+    font-size: 1.5rem; /* Adjusted font size for smaller screens */
+  }
+
+  .textblock-content-a,
+  .textblock-content-b {
+    font-size: 0.8rem; /* Adjusted font size for smaller screens */
+  }
 }

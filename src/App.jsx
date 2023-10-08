@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react"; // Import useRef
+import React, { useState, useRef } from "react"; // Import useRef
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 import "./App.css";
 import About from "./Components/Content/About";
@@ -47,11 +47,6 @@ function App() {
         <ParallaxLayer offset={0} speed={0.2}>
           <div className="animation_layer parallax" id="sun"></div>
         </ParallaxLayer>
-        <ParallaxLayer offset={0} speed={0.1}>
-          <div className="animation_layer parallax" id="top">
-            <img src={placeholder} />
-          </div>
-        </ParallaxLayer>
         <ParallaxLayer offset={0} speed={0.2}>
           <div className="animation_layer parallax" id="backfield"></div>
         </ParallaxLayer>
@@ -63,6 +58,11 @@ function App() {
         </ParallaxLayer>
         <ParallaxLayer offset={0} speed={0.1}>
           <div className="animation_layer parallax" id="corn"></div>
+        </ParallaxLayer>
+        <ParallaxLayer offset={0} speed={0.1}>
+          <div className="animation_layer parallax" id="top">
+            <img src={placeholder} alt="Placeholder" />
+          </div>
         </ParallaxLayer>
         <ParallaxLayer offset={1} speed={0}>
           <About />
