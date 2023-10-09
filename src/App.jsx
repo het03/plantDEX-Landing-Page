@@ -6,6 +6,7 @@ import Working from "./Components/Content/Working";
 import FAQ from "./Components/Content/FAQ";
 import placeholder from "./assets/placeholder.svg";
 import CustomNavbar from "./Components/Navbar/Navbar";
+import Contact from "./Components/Content/Contact";
 
 function App() {
   const parallaxRef = useRef(null); // Use useRef to create a ref
@@ -30,7 +31,7 @@ function App() {
         toggleOverlay={toggleOverlay}
       />
       <Parallax
-        pages={4}
+        pages={5}
         style={{ top: "0", left: "0" }}
         className="animation"
         ref={parallaxRef} // Attach the ref to Parallax
@@ -72,6 +73,9 @@ function App() {
         </ParallaxLayer>
         <ParallaxLayer offset={3} speed={0}>
           <FAQ />
+        </ParallaxLayer>
+        <ParallaxLayer offset={4} speed={0}>
+          <Contact />
         </ParallaxLayer>
       </Parallax>
     </>

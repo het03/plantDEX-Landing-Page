@@ -1,0 +1,184 @@
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.contact-container {
+  flex: 1;
+  padding-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #f9dfbb;
+}
+
+.contact-container h1 {
+  font-size: 5rem;
+  font-weight: 900;
+  margin-bottom: 1.5rem;
+  color: #1c4732;
+}
+
+.contact-container form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 30rem;
+  padding: 0 1rem;
+}
+
+.contact-container label {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: #161718;
+}
+
+.contact-container input,
+.contact-container textarea {
+  outline: none;
+  border: none;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  width: 100%;
+  border-radius: 0.3rem;
+}
+
+.contact-container input:focus,
+.contact-container textarea:focus {
+  outline: none;
+  border: none;
+  border-color: #327e56;
+}
+
+.contact-container button {
+  padding: 0.8rem 3rem;
+  margin-top: 1rem;
+  font-size: 1.3rem;
+  background-color: green;
+  color: #fff;
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+.contact-container button:hover {
+  background-color: #049a10;
+}
+
+footer {
+  background-color: #f9dfbb;
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+  .contact-container {
+    background-color: #c9fede;
+  }
+  .contact-container h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+
+  .contact-container form {
+    max-width: 80%;
+  }
+
+  .contact-container label {
+    font-size: 1.2rem;
+  }
+
+  .contact-container input,
+  .contact-container textarea {
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    width: 100%;
+    border-radius: 0.3rem;
+  }
+
+  .contact-container button {
+    padding: 0.8rem 2rem;
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    border-radius: 1rem;
+  }
+
+  footer {
+    background-color: #c9fede;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .contact-container {
+    background-color: #c9fede;
+  }
+  .contact-container h1 {
+    font-size: 2%;
+    margin-bottom: 1rem;
+  }
+
+  .contact-container form {
+    max-width: 80%;
+  }
+
+  .contact-container label {
+    font-size: 1.2rem;
+  }
+
+  .contact-container input,
+  .contact-container textarea {
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    width: 100%;
+    border-radius: 0.3rem;
+  }
+
+  .contact-container button {
+    padding: 0.8rem 2rem;
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    border-radius: 1rem;
+  }
+
+  footer {
+    background-color: #c9fede;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .contact-container {
+    background-color: #c9fede;
+  }
+  .contact-container h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .contact-container form {
+    max-width: 80%;
+  }
+
+  .contact-container label {
+    font-size: 1.2rem;
+  }
+
+  .contact-container input,
+  .contact-container textarea {
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    width: 100%;
+    border-radius: 0.3rem;
+  }
+
+  .contact-container button {
+    padding: 0.8rem 2rem;
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    border-radius: 1rem;
+  }
+}
