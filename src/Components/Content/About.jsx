@@ -17,12 +17,10 @@ function About() {
             seamlessly. During the intense SIH event, we balanced academics and
             hackathon demands, meticulously researching and coding with guidance
             from mentors. PlantDEX emerged as a testament to our determination
-            and collaboration, symbolizing our vision to revolutionize
-            agriculture through technology. Today, PlantDEX is more than an SIH
-            project; it's a real-world solution, a product of our relentless
-            efforts. Join us in this journey to empower farmers and create a
-            sustainable future, where technology and agriculture coalesce to
-            benefit every farmer and our nation.
+            and collaboration. Today, PlantDEX is more than an SIH project; a
+            product of our relentless efforts. Join us in this journey to
+            empower farmers and create a sustainable future, where technology
+            and agriculture coalesce to benefit every farmer and our nation.
           </p>
         </div>
         <div className="textblock-container-b">
